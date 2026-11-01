@@ -1,0 +1,5 @@
+# Self-references (uses: ./.github/workflows/...) keep the classic form: actionlint 1.7.12
+# rejects GitHub's $/ self-repository syntax.
+rules:
+  self-repository:
+    disable: true

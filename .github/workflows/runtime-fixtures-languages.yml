@@ -439,7 +439,7 @@ jobs:
     name: observe / dart-flutter-ci
     needs: fixture-dart-flutter-ci
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 5
     permissions:
       contents: read
@@ -483,7 +483,7 @@ jobs:
     name: observe / kotlin-android-ci
     needs: fixture-kotlin-android-ci
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 5
     permissions:
       contents: read
@@ -531,7 +531,7 @@ jobs:
   # belong to the per-run receipt, not to a file in git.
   generate-android-provenance:
     name: reproduce / android provenance
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 30
     permissions:
       contents: read
@@ -599,7 +599,7 @@ jobs:
     name: observe / qt-ci
     needs: fixture-qt-ci
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 5
     permissions:
       contents: read
@@ -686,7 +686,7 @@ jobs:
       - fixture-sql-ci-os
       - fixture-web-ci-os
     if: always()
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 5
     permissions:
       contents: read

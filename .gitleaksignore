@@ -1,0 +1,5 @@
+# Reviewed historical Gitleaks finding (2026-11-01, STD-0004 R-0015); the value is not reproduced.
+
+# scripts/check_sdk_runtime_fixtures.py:238 @7cbd1e8549 [generic-api-key]: a GitHub Actions cache key name
+# ("flutter-…-<version>") in a test fixture, not a credential.
+7cbd1e85490e87c684a4d796276328ea1681c3b9:scripts/check_sdk_runtime_fixtures.py:generic-api-key:238
