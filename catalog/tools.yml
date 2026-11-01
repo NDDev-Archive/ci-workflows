@@ -18,7 +18,7 @@ tools:
       rather than resolved at run time. Pinning the two top-level names left
       everything they pull unbounded.
     lock: requirements-qt.txt
-    lock_sha256: "e8fd018f0ce1d2f8f23d1fe9ce674e384e98e3fc1ac34386e2fa769fede16185"
+    lock_sha256: "cc52353296029b9b71a2c5423b80bed0c35314ddd027bfcc4c46b0bf7b81c810"
   - id: py7zr
     name: py7zr
     homepage: https://github.com/miurahr/py7zr
@@ -30,7 +30,7 @@ tools:
     last_verified: "2026-08-15"
     notes: aqtinstall's archive backend; locked in the same closure.
     lock: requirements-qt.txt
-    lock_sha256: "e8fd018f0ce1d2f8f23d1fe9ce674e384e98e3fc1ac34386e2fa769fede16185"
+    lock_sha256: "cc52353296029b9b71a2c5423b80bed0c35314ddd027bfcc4c46b0bf7b81c810"
   - id: actionlint
     name: actionlint
     homepage: "https://github.com/rhysd/actionlint"
@@ -618,3 +618,13 @@ tools:
     used_by:
       - .github/workflows/clusterfuzzlite.yml
     last_verified: "2026-08-12"
+
+  - id: std-0004-tools
+    name: NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows (tools action)
+    homepage: "https://github.com/NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows"
+    kind: action
+    current_version: "nddev-cicd-v0.6.18"
+    pin: "NDDev-Technocracy-Standarts/std-0004-ci-cd-workflows@9cc44a5043ddd266f3e73fefacc52f5cf5a7d70f"
+    used_by:
+      - .github/workflows/ci.yml
+    last_verified: "2026-11-01"
