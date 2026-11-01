@@ -22,7 +22,6 @@ SELF_WORKFLOWS = {
     "maintenance.yml",
     "codeql.yml",
     "dependency-review.yml",
-    "gitleaks.yml",
     "release.yml",
     "runtime-fixtures.yml",
     "runtime-fixtures-languages.yml",

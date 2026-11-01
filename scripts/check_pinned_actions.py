@@ -19,7 +19,9 @@ DIGEST_RE = re.compile(r"@sha256:[0-9a-f]{64}$")
 # test. Two accepted forms — a semantic version, or an ISO date for upstreams
 # that publish no releases at all (`google/clusterfuzzlite`), where a date is
 # the honest identifier rather than an invented version.
-PIN_COMMENT_RE = re.compile(r"#\s*(v?\d+\.\d+(?:\.\d+)?[\w.+-]*|\d{4}-\d{2}-\d{2})\b")
+# A monorepo tags each component with a prefix (`nddev-cicd-v0.6.18`); that tag
+# is the release name, so the prefix is accepted in front of the version.
+PIN_COMMENT_RE = re.compile(r"#\s*((?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*-)?v?\d+\.\d+(?:\.\d+)?[\w.+-]*|\d{4}-\d{2}-\d{2})\b")
 
 
 def check() -> list[str]:
