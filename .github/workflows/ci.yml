@@ -470,8 +470,8 @@ jobs:
           capability: security
       - name: Lint and audit this repository's own workflows
         run: |
-          actionlint .github/workflows/ci.yml .github/workflows/maintenance.yml .github/workflows/release.yml .github/workflows/runtime-fixtures-event-write.yml .github/workflows/runtime-fixtures-languages.yml .github/workflows/runtime-fixtures.yml .github/workflows/security.yml
-          zizmor --offline --no-progress .github/workflows/ci.yml .github/workflows/maintenance.yml .github/workflows/release.yml .github/workflows/runtime-fixtures-event-write.yml .github/workflows/runtime-fixtures-languages.yml .github/workflows/runtime-fixtures.yml .github/workflows/security.yml
+          actionlint .github/workflows/ci.yml .github/workflows/maintenance.yml .github/workflows/release.yml .github/workflows/runtime-fixtures-event-write.yml .github/workflows/runtime-fixtures-languages.yml .github/workflows/runtime-fixtures.yml .github/workflows/codeql.yml .github/workflows/dependency-review.yml .github/workflows/scorecard.yml
+          zizmor --offline --no-progress .github/workflows/ci.yml .github/workflows/maintenance.yml .github/workflows/release.yml .github/workflows/runtime-fixtures-event-write.yml .github/workflows/runtime-fixtures-languages.yml .github/workflows/runtime-fixtures.yml .github/workflows/codeql.yml .github/workflows/dependency-review.yml .github/workflows/scorecard.yml
       - name: Scan new pull request commits, or the full history on main
         env:
           BASE: ${{ github.event.pull_request.base.sha }}
